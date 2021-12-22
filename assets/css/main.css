@@ -2702,7 +2702,7 @@ input[type="button"]:disabled,
   background-repeat: repeat, no-repeat;
   background-size: cover;
   color: rgba(255, 255, 255, 0.5);
-
+  background-blend-mode: overlay;
   height: 100%;
   left: 0;
   padding: 7em 1em;
@@ -3087,16 +3087,10 @@ body.is-touch .poptrox-popup .closer {
   /* Header */
 
   #header {
-    padding: 6em 3em 3em 3em;
+    padding: 6em 3em -3em 3em;
     width: 30%;
-  }
-
-  #header h1 {
-    font-size: 1.25em;
-  }
-
-  #header h1 br {
-    display: none;
+    text-align: right;
+    font-size: 0.85em;
   }
 
   #header > .inner {
@@ -3137,8 +3131,8 @@ body.is-touch .poptrox-popup .closer {
 
   #header {
     background-attachment: scroll;
-    background-position: right, right;
-    background-size: 140%;
+    background-position: center;
+    background-size: 100%;
     background-repeat: no-repeat;
     left: auto;
     position: relative;
@@ -3146,7 +3140,8 @@ body.is-touch .poptrox-popup .closer {
     top: auto;
     width: 100%;
     display: block;
-    font-size: 18px;
+    font-size: 1em;
+    padding: 5em;
   }
 
   #header h1 br {
@@ -3157,7 +3152,6 @@ body.is-touch .poptrox-popup .closer {
 
   #footer {
     background-attachment: scroll;
-    background-color: #2e2e2e;
     background-image: url("../../images/feature.jpg");
     background-position: top left, bottom center;
     background-repeat: repeat, no-repeat;
@@ -3178,7 +3172,7 @@ body.is-touch .poptrox-popup .closer {
 
   #main {
     margin: 0;
-    padding: 6em 4em;
+    padding: 3em 4em;
     width: 100%;
   }
 }
@@ -3225,6 +3219,7 @@ body.is-touch .poptrox-popup .closer {
 
   #header {
     padding: 2.25em 1.5em;
+    text-align: center;
   }
 
   #header h1 {
@@ -3267,9 +3262,5 @@ body.is-touch .poptrox-popup .closer {
 
   #header {
     padding: 4.5em 1.5em;
-  }
-
-  #header h1 br {
-    display: none;
   }
 }
